@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7017F0225B7B2A7003B49C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7017F0025B7B1B4003B49C0 /* Info.plist */; };
 		D702A6E925B6DBA400576D18 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D702A6E825B6DBA400576D18 /* Game.swift */; };
 		D702A6EC25B6DC4300576D18 /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D702A6EB25B6DC4300576D18 /* QuestionManager.swift */; };
 		D73FFB5C25B5F6CE00BAF6F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73FFB5B25B5F6CE00BAF6F1 /* AppDelegate.swift */; };
@@ -15,11 +16,13 @@
 		D73FFB6325B5F6CE00BAF6F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73FFB6125B5F6CE00BAF6F1 /* Main.storyboard */; };
 		D73FFB6525B5F6D200BAF6F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73FFB6425B5F6D200BAF6F1 /* Assets.xcassets */; };
 		D73FFB6825B5F6D200BAF6F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73FFB6625B5F6D200BAF6F1 /* LaunchScreen.storyboard */; };
+		D74CDE0825B8271C0072EB02 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74CDE0725B8271C0072EB02 /* QuestionView.swift */; };
 		D7B240D325B5FBA300AA6E6E /* Balham.otf in Resources */ = {isa = PBXBuildFile; fileRef = D7B240D225B5FBA300AA6E6E /* Balham.otf */; };
 		D7B240D625B6052A00AA6E6E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B240D525B6052A00AA6E6E /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D7017EFF25B7B1B4003B49C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 		D702A6E825B6DBA400576D18 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		D702A6EB25B6DC4300576D18 /* QuestionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionManager.swift; path = ../../../../../../../Downloads/QuestionManager.swift; sourceTree = "<group>"; };
 		D73FFB5825B5F6CE00BAF6F1 /* OpenQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,7 +32,7 @@
 		D73FFB6225B5F6CE00BAF6F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D73FFB6425B5F6D200BAF6F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D73FFB6725B5F6D200BAF6F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D73FFB6925B5F6D200BAF6F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D74CDE0725B8271C0072EB02 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = SOURCE_ROOT; };
 		D7B240D225B5FBA300AA6E6E /* Balham.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Balham.otf; sourceTree = "<group>"; };
 		D7B240D525B6052A00AA6E6E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				D73FFB5A25B5F6CE00BAF6F1 /* OpenQuizz */,
-				D73FFB7325B5F7B500BAF6F1 /* Supporting Files */,
 				D73FFB5925B5F6CE00BAF6F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +70,8 @@
 				D73FFB7025B5F78D00BAF6F1 /* Model */,
 				D73FFB7125B5F79700BAF6F1 /* View */,
 				D73FFB7225B5F79C00BAF6F1 /* Controller */,
+				D73FFB7325B5F7B500BAF6F1 /* Supporting Files */,
+				D7017F0025B7B1B4003B49C0 /* Info.plist */,
 			);
 			path = OpenQuizz;
 			sourceTree = "<group>";
@@ -85,6 +89,7 @@
 		D73FFB7125B5F79700BAF6F1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D74CDE0725B8271C0072EB02 /* QuestionView.swift */,
 				D73FFB6125B5F6CE00BAF6F1 /* Main.storyboard */,
 			);
 			path = View;
@@ -101,7 +106,6 @@
 		D73FFB7325B5F7B500BAF6F1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D73FFB6925B5F6D200BAF6F1 /* Info.plist */,
 				D73FFB6625B5F6D200BAF6F1 /* LaunchScreen.storyboard */,
 				D73FFB6425B5F6D200BAF6F1 /* Assets.xcassets */,
 				D73FFB5D25B5F6CE00BAF6F1 /* SceneDelegate.swift */,
@@ -171,6 +175,7 @@
 				D73FFB6825B5F6D200BAF6F1 /* LaunchScreen.storyboard in Resources */,
 				D73FFB6525B5F6D200BAF6F1 /* Assets.xcassets in Resources */,
 				D7B240D325B5FBA300AA6E6E /* Balham.otf in Resources */,
+				D7017F0225B7B2A7003B49C0 /* Info.plist in Resources */,
 				D73FFB6325B5F6CE00BAF6F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,6 +190,7 @@
 				D73FFB6025B5F6CE00BAF6F1 /* ViewController.swift in Sources */,
 				D702A6E925B6DBA400576D18 /* Game.swift in Sources */,
 				D7B240D625B6052A00AA6E6E /* Question.swift in Sources */,
+				D74CDE0825B8271C0072EB02 /* QuestionView.swift in Sources */,
 				D73FFB5C25B5F6CE00BAF6F1 /* AppDelegate.swift in Sources */,
 				D73FFB5E25B5F6CE00BAF6F1 /* SceneDelegate.swift in Sources */,
 				D702A6EC25B6DC4300576D18 /* QuestionManager.swift in Sources */,
@@ -194,6 +200,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		D7017F0025B7B1B4003B49C0 /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7017EFF25B7B1B4003B49C0 /* Base */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
 		D73FFB6125B5F6CE00BAF6F1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -336,7 +350,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5586WGAA49;
-				INFOPLIST_FILE = OpenQuizz/Info.plist;
+				INFOPLIST_FILE = OpenQuizz/Base.lproj/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,7 +369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5586WGAA49;
-				INFOPLIST_FILE = OpenQuizz/Info.plist;
+				INFOPLIST_FILE = OpenQuizz/Base.lproj/info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
